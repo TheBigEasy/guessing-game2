@@ -7,7 +7,7 @@ var message;
 
 
 var question1 = prompt('What state did I grow up in?');
-if (question1.toUpperCase() === "CALIFORNIA" || question1.toUpperCase() === "C" || question1.toUpperCase === "Ca" || question1.toUpperCase() === "CA" || question1.toUpperCase() === "c") {
+if (question1.toUpperCase() === "CALIFORNIA" || question1.toUpperCase() === "C" || question1.toUpperCase() === "CA") {
 	alert('Great job ' + userName + '!  There are a lot of states to choose from.');
 	score += 1;
 } else {
@@ -17,7 +17,7 @@ console.log('user response to question 1 is: ' + question1);
 
 
 var question2 = prompt('What college did I go to?');
-if (question2.toUpperCase() === 'BROOKS INSTITUTE OF PHOTOGRAPHY' || question2 === 'Brooks' || question2 === 'brooks') {
+if (question2.toUpperCase() === 'BROOKS INSTITUTE OF PHOTOGRAPHY' || question2.toUpperCase() === 'BROOKS') {
 	alert('Hey ' + userName + ' That was an amazing guess.  Not too many people know that.');
 	score += 1;
 } else {
