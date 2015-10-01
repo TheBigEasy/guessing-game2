@@ -7,6 +7,7 @@ var message;
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
+var msg = document.getElementById('msg');
 
 function ques1() {
   var question1 = prompt('What state did I grow up in?');
@@ -22,7 +23,7 @@ function ques1() {
 function ques2() {
   var question2 = prompt('What college did I go to?');
   if (question2.toUpperCase() === 'BROOKS INSTITUTE OF PHOTOGRAPHY' || question2.toUpperCase() === 'BROOKS') {
-	two.inner.HTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
+	two.innerHTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
 	score += 1;
   } else {
 	two.innerHTML ='Good guess ' + userName + ' , but not right.  Try again!';
@@ -52,7 +53,10 @@ ques3();
 
 
 
-// message = 'Good job ' + userName + ', you got' + score + ' out of 3 correct!';
+message = 'Good job ' + userName + ', you got' + score + ' out of 3 correct!';
+msg.innerHTML = message;
+
+
 // document.write(message);
 
 
