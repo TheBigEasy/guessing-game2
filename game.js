@@ -53,7 +53,7 @@ ques3();
 
 
 
-message = 'Good job ' + userName + ', you got' + score + ' out of 3 correct!';
+message = 'Good job ' + userName + ', you got ' + score + ' out of 3 correct!';
 msg.innerHTML = message;
 
 
