@@ -1,3 +1,5 @@
+var questions = ['What state did I grow up in?','What college did I go to?', 'How long have I been Married?'];
+var answers = ["CALIFORNIA","C","CA",'BROOKS INSTITUTE OF PHOTOGRAPHY','BROOKS','18 Years','18','eighteen years'];
 
 var userName = prompt('Enter your name here.')
 
@@ -10,8 +12,8 @@ var three = document.getElementById('three');
 var msg = document.getElementById('msg');
 
 function ques1() {
-  var question1 = prompt('What state did I grow up in?');
-  if (question1.toUpperCase() === "CALIFORNIA" || question1.toUpperCase() === "C" || question1.toUpperCase() === "CA") {
+  var question1 = prompt(questions[0]);
+  if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1] || question1.toUpperCase() === answers[2]) {
 	one.innerHTML = 'Great job ' + userName + '!  There are a lot of states to choose from.';
 	score += 1;
   } else {
@@ -21,8 +23,8 @@ function ques1() {
 }
 
 function ques2() {
-  var question2 = prompt('What college did I go to?');
-  if (question2.toUpperCase() === 'BROOKS INSTITUTE OF PHOTOGRAPHY' || question2.toUpperCase() === 'BROOKS') {
+  var question2 = prompt(questions[1]);
+  if (question2.toUpperCase() === answers[3] || question2.toUpperCase() === answers[4]) {
 	two.innerHTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
 	score += 1;
   } else {
@@ -32,8 +34,8 @@ function ques2() {
 }
 
 function ques3() {
-  var question3 = prompt('How long have I been Married?');
-  if (question3 === '18 Years' || question3 === '18' || question3 === 'eighteen years') {
+  var question3 = prompt(questions[2]);
+  if (question3 === answers[5] || question3 === answers[6] || question3 === answers[7]) {
 	three.innerHTML = 'Absolutely right ' + userName + ' Nice job.';
 	score += 1;
   } else {
@@ -48,9 +50,6 @@ function ques3() {
 ques1();
 ques2();
 ques3();
-
-
-
 
 
 message = 'Good job ' + userName + ', you got ' + score + ' out of 3 correct!';
