@@ -10,3 +10,6 @@ Copied questions into <h4>.
 Created variables with innerHTML and id parameters.
 
 changed document.write message to innerHTML msg to keep score
+Created arrays for q and a.  added images to correct answers.
+
+added colors to bg and fonts.

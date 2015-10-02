@@ -29,7 +29,7 @@ function ques2() {
   var question2 = prompt(questions[1]);
   if (question2.toUpperCase() === answers[3] || question2.toUpperCase() === answers[4]) {
 	two.innerHTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
-	picTwo.innerHTML = '<img src="img/brooks.jpeg" width ="200"/>';
+	picTwo.innerHTML = '<img src="img/san_diego.jpeg" width ="200"/>';
 	score += 1;
   } else {
 	two.innerHTML ='Good guess ' + userName + ' , but not right.  Try again!';
@@ -52,10 +52,12 @@ function ques3() {
 
 }
 
+// ques1();
+// ques2();
+// ques3();
 ques1();
-ques2();
-ques3();
-
+window.setTimeout(ques2, 1000);
+window.setTimeout(ques3, 1000);
 
 message = 'Good job ' + userName + ', you got ' + score + ' out of 3 correct!';
 msg.innerHTML = message;
