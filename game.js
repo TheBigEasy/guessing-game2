@@ -29,7 +29,7 @@ function ques2() {
   var question2 = prompt(questions[1]);
   if (question2.toUpperCase() === answers[3] || question2.toUpperCase() === answers[4]) {
 	two.innerHTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
-	picTwo.innerHTML = '<img src="img/san_diego.jpeg" width ="200"/>';
+	picTwo.innerHTML = '<img src="img/santa_barbara.jpeg" width ="200"/>';
 	score += 1;
   } else {
 	two.innerHTML ='Good guess ' + userName + ' , but not right.  Try again!';
