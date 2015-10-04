@@ -29,7 +29,7 @@ function ques2() {
   var question2 = prompt(questions[1]);
   if (question2.toUpperCase() === answers[3] || question2.toUpperCase() === answers[4]) {
 	two.innerHTML = 'Hey ' + userName + ' That was an amazing guess.  Not too many people know that.';
-	picTwo.innerHTML = '<img src="img/santa_barbara.jpeg" width ="200"/>';
+	picTwo.innerHTML = '<img src="img/santa_barbara.jpeg" width="200"/>';
 	score += 1;
   } else {
 	two.innerHTML ='Good guess ' + userName + ' , but not right.  Try again!';
@@ -42,7 +42,7 @@ function ques3() {
   if (question3 === answers[5] || question3 === answers[6] || question3 === answers[7]) {
 	three.innerHTML = 'Absolutely right ' + userName + ' Nice job.';
 	score += 1;
-	picThree.innerHTML = '<img src="img/couple.jpeg" width ="200"/>';
+	picThree.innerHTML = '<img src="img/couple.jpeg" width="200"/>';
   } else {
 	three.innerHTML = 'I know it\'s hard to guess ' + userName + '.  I\'ll give you a hint, it is more than 10.';
   }
