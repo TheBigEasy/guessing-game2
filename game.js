@@ -13,6 +13,7 @@ var msg = document.getElementById('msg');
 var picOne = document.getElementById('picOnes');
 var picTwo = document.getElementById('picTwos');
 var picThree = document.getElementById('picThrees');
+
 function ques1() {
   var question1 = prompt(questions[0]);
   if (question1.toUpperCase() === answers[0] || question1.toUpperCase() === answers[1] || question1.toUpperCase() === answers[2]) {
